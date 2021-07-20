@@ -19,7 +19,7 @@ public class ConnectToCloudSql {
 
 	@SuppressFBWarnings(value = "USBR_UNNECESSARY_STORE_BEFORE_RETURN", justification = "Necessary for sample region tag.")
 	public DataSource createConnectionPool() {
-
+		System.out.println("IN createConnectionPool");
 		HikariConfig config = new HikariConfig();
 
 		config.setJdbcUrl(String.format("jdbc:mysql:///%s", DB_NAME));

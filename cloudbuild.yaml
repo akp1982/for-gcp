@@ -7,6 +7,6 @@ steps:
   - auto-deployed-function
   - --region=asia-south1
   - --source=.
-  - --runtime java11
+  - --runtime=java11
   - --entry-point=functions.HelloWorld
   - --trigger-http

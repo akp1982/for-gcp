@@ -5,8 +5,10 @@ steps:
   - functions
   - deploy
   - auto-deployed-function
+  - --allow-unauthenticated
   - --region=asia-south1
   - --source=.
   - --runtime=java11
+  - --vpc-connector=serverless-vpc-connector
   - --entry-point=functions.HelloWorld
   - --trigger-http

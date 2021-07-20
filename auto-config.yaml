@@ -8,3 +8,4 @@ steps:
   - --region=asia-south1
   - --source=.
   - --trigger-http
+  - --runtime java11

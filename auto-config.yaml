@@ -4,7 +4,7 @@ steps:
   - gcloud
   - functions
   - deploy
-  - FUNCTION_NAME
+  - auto-deployed-function
   - --region=asia-south1
   - --source=.
   - --trigger-http

@@ -8,4 +8,5 @@ steps:
   - --region=asia-south1
   - --source=.
   - --runtime java11
+  - --entry-point=functions.HelloWorld
   - --trigger-http

@@ -47,3 +47,4 @@ public class HelloWorld implements HttpFunction {
   }
 }
 // [END functions_helloworld_get]
+//end

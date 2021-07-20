@@ -7,5 +7,5 @@ steps:
   - auto-deployed-function
   - --region=asia-south1
   - --source=.
+  - --runtime java11
   - --trigger-http
-  - --runtime java 11

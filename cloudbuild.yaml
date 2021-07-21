@@ -7,7 +7,7 @@ steps:
   - auto-deployed-func
   - --allow-unauthenticated
   - --region=asia-south1
-  - --memory=512MB
+  - --memory=1024MB
   - --source=.
   - --runtime=java11
   - --vpc-connector=serverless-vpc-connector

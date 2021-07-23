@@ -31,17 +31,18 @@ public class HelloWorld implements HttpFunction {
   // Simple function to return "Hello World"
   @Override
   public void service(HttpRequest request, HttpResponse response)
-      throws IOException {
+      throws Exception {
 	  System.out.println("Request Received");
 	  
     BufferedWriter writer = response.getWriter();
-    writer.write("Hello World!");
+    writer.write("Connected to Cloud SQL over SSL and with private IPs");
     ConnectToCloudSql sqlConnect = new ConnectToCloudSql();
     DataSource ds = sqlConnect.createConnectionPool();
     try {
     	sqlConnect.createTable(ds);
     }catch(Exception ie) {
     	ie.printStackTrace();
+    	throw ie;
     }
     
   }
